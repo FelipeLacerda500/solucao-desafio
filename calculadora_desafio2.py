@@ -50,7 +50,7 @@ def calculadora(consumo: list, classe: str, bandeira: str) -> tuple:
             desconto_aplicado = tabela_descontos[classe.lower()][indice_faixa]
         economia_mensal = (consumo_medio * tarifa) * desconto_aplicado * cobertura
         economia_anual = economia_mensal * 12
-        print(economia_anual)
+
         return (
             round(economia_anual, 2),
             round(economia_mensal, 2),
